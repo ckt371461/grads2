@@ -1,0 +1,7 @@
+'open sst.day.mean.2005.ctl'
+'set lon 90 300'
+'set lat -30 30'
+'set t 2'
+'d sst'
+'printim img/2005-2.png'
+'clear'
