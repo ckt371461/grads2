@@ -1,0 +1,10 @@
+'open sst.day.mean.all.ctl'
+'set display color white'
+'set lon 90 300'
+'set lat -30 30'
+* 'set gxout shaded'
+'set t 1 3'
+'define k=ave(sst,t+0,t=5475,365)'
+'d ave(k,t=1,t=3)'
+'gxprint img/ave-test.svg'
+

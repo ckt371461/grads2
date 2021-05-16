@@ -10,8 +10,7 @@ while (count < 729)
  say 'rc='rc
  'set rbcols 9 14 4 11 5 13 3 10 7 12 8 2 6'  
  'set t 'count
-* 'define average=ave(sst,t='rc',t=729,365)'
- average = 5
+ 'define average=ave(sst,t='rc',t=729,365)'
  say 'average='average
  'd sst-average'
  'printim img/all-'count'.png'

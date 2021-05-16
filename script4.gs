@@ -1,0 +1,8 @@
+'open sst.day.mean.all.ctl'
+'set lon 90 300'
+'set lat -30 30'
+'set t 1 365'
+'define sstm = ave(sst,t+0,t=5475,365)'
+'define ssta = ave(sstm,t=91,t=182)'
+'d ssta'
+'printim img/ave.all.3-5.png'
