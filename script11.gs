@@ -1,7 +1,6 @@
 'open all.msl.ctl'
-*'set gxout shaded'
-'set lon 90 300'
-'set lat -30 30'
+'set lon 114 124'
+'set lat 21 28'
 'define rm= msl(t=1)-msl(t=1)'
 'define ram= msl(t=1)-msl(t=1)'
 data='2009 2015' 
@@ -22,9 +21,9 @@ while (k<=15)
  rca = (k-1)*365+60
  rca1 = (k-1)*365+151
  say 'rca='rca
- 'define averaam=ave(msl,t='rca',t='rca1')'
- 'define ram = averaam+ram'
+ 'define averaau=ave(msl,t='rca',t='rca1')'
+ 'define ram = averaau+ram'
  k=k+1
 endwhile
 'd rm/2-ram/15'
-'printim img/ave.Elnino-all.msl.3-5.png'
+'printim img/ave.Elnino-all.msl.K.3-5.png white'

@@ -1,12 +1,11 @@
 'open sst.day.mean.all.ctl'
-'set lon 90 300'
-'set lat -30 30'
-'set gxout shaded'
+'set lon 114 124'
+'set lat 21 28'
 'define r= sst(t=1)-sst(t=1)'
 'define ra= sst(t=1)-sst(t=1)'
-data='2007 2010 2011' 
+data='2009 2015' 
 n=1
-while (n<=3)
+while (n<=2)
  a = subwrd(data,n)-2004
  say 'a='a
  rc = a*365+60
@@ -26,5 +25,5 @@ while (k<=15)
  'define ra = averaa+ra'
  k=k+1
 endwhile
-'d r/3-ra/15'
-'printim img/ave.Lanina-all2.3-5.png'
+'d r/2-ra/15'
+'printim img/ave.Elnino-all.K.3-5.png white'
